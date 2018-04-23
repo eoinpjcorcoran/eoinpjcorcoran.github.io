@@ -1,1 +1,4 @@
-# eoinpjcorcoran.github.io
+# eoinpjcorcoran.me
+    - Eoin Corcoran
+    - Web Developer
+    - Cork, Ireland
