@@ -1,0 +1,50 @@
+.menu{
+    height: 50px;
+    background-color: #000;
+}
+
+.menu-header{
+    color: #fff;
+    margin-bottom: 0;
+    line-height: 50px;
+}
+
+.menu-header span{
+    vertical-align: middle;
+}
+
+.hamburger{
+    float: right;
+    max-width: 60px;
+}
+
+.row{
+    height: 50px;
+}
+
+.--hidden{
+    display: none;
+}
+
+.menu--desktop{
+    display: none;
+}
+
+.icon{
+    color: #fff;
+}
+
+.hamburger--close{
+    display: none;
+}
+
+
+@media (min-width: 769px) {
+    .menu--desktop{
+        display: block;
+    }
+
+    .menu--mobile{
+        display: none;
+    }
+}
