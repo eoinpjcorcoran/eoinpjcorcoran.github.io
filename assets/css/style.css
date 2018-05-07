@@ -1,50 +1,49 @@
-.menu{
-    height: 50px;
-    background-color: #000;
+html{
+    font-size: 25px;
+    font-family: Helvetica;
+    max-width: 320px;
 }
 
-.menu-header{
-    color: #fff;
-    margin-bottom: 0;
-    line-height: 50px;
+ul{
+    margin: 0;
+    padding: 0;
 }
 
-.menu-header span{
-    vertical-align: middle;
+a{
+    display: block;
+    height: 64px;
 }
 
-.hamburger{
-    float: right;
-    max-width: 60px;
+.nav{
+    width: 20%;
+    float: left;    
 }
 
-.row{
-    height: 50px;
+.nav li{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 50px;
 }
 
-.--hidden{
-    display: none;
+.bio{
+    width: 65%;
+    float: left;
+    margin-left: 15%;
 }
 
-.menu--desktop{
-    display: none;
+.bio li:first-child{
+    margin-top: 7.5%;
 }
 
-.icon{
-    color: #fff;
+.bio li{
+    margin: 87px 0;
+    list-style-type: none;
 }
 
-.hamburger--close{
-    display: none;
+.icon--twitter{ 
+    color: #0084b4; 
 }
 
-
-@media (min-width: 769px) {
-    .menu--desktop{
-        display: block;
-    }
-
-    .menu--mobile{
-        display: none;
-    }
+.icon--linkedin{ 
+    color: #0077B5; 
 }
