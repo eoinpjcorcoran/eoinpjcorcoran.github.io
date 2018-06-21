@@ -1,49 +1,73 @@
 html{
-    font-size: 25px;
+    max-width: 760px;
+    line-height: 24px;
     font-family: Helvetica;
-    max-width: 320px;
+    color: #fff;
+    background-color: #272822;
+}
+
+body{
+    margin: 10px;
 }
 
 ul{
-    margin: 0;
-    padding: 0;
+    padding: 0 15px;
+    color: #FFE792;
+    font-family: sans-serif;
+}
+
+li{
+    margin: 1em 0;
 }
 
 a{
+    color: #AE81FF;
     display: block;
-    height: 64px;
 }
 
-.nav{
-    width: 20%;
-    float: left;    
+.row--desktop{
+    display: none;
 }
 
-.nav li{
-    width: 64px;
-    height: 64px;
-    margin-bottom: 50px;
+.row--title{
+    border-bottom: 1px solid #75715E;
 }
 
-.bio{
-    width: 65%;
+.row--title h1{
+    margin: 16px 0;
+}
+
+.header--about{
+    color: #F92672;
+}
+
+.header--projects{
+    color: #A6E22E;
+}
+
+.header--contact{
+    color: #66D9EF;
+}
+
+.contact li{
+    margin: 0;
     float: left;
-    margin-left: 15%;
+    list-style: none;
 }
 
-.bio li:first-child{
-    margin-top: 7.5%;
+.icon svg{
+    fill: #ececec;
+    height: 35px;
+    width: 35px;
+    margin: 10px;
 }
 
-.bio li{
-    margin: 87px 0;
-    list-style-type: none;
-}
+@media (min-width: 760px){
+    .row--desktop{
+        display: block;
+    }
 
-.icon--twitter{ 
-    color: #0084b4; 
-}
-
-.icon--linkedin{ 
-    color: #0077B5; 
+    .row--mobile{
+        display: none;
+    }
 }
