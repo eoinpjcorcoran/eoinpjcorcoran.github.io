@@ -1,23 +1,40 @@
 html{
     max-width: 760px;
     line-height: 24px;
-    font-family: Helvetica;
-    color: #fff;
-    background-color: #272822;
+    font-family: Helvetica, sans-serif;
 }
 
-body{
-    margin: 10px;
+body, h1, h2, ul{
+    margin: 0;
+}
+
+.row{
+    margin: 20px 15px;
+}
+
+.row--title{
+    padding: 0 0 20px;
+    border-bottom: 1px solid #75715E;
+}
+
+.row h2{
+    padding-bottom: 5px;
+}
+
+.row--about h2 span{
+    color: #F92672;
+}
+
+.row--projects h2 span{
+    color: #A6E22E;
+}
+
+.row--contact h2 span{
+    color: #66D9EF;
 }
 
 ul{
     padding: 0 15px;
-    color: #FFE792;
-    font-family: sans-serif;
-}
-
-li{
-    margin: 1em 0;
 }
 
 a{
@@ -25,28 +42,10 @@ a{
     display: block;
 }
 
+
+
 .row--desktop{
     display: none;
-}
-
-.row--title{
-    border-bottom: 1px solid #75715E;
-}
-
-.row--title h1{
-    margin: 16px 0;
-}
-
-.header--about{
-    color: #F92672;
-}
-
-.header--projects{
-    color: #A6E22E;
-}
-
-.header--contact{
-    color: #66D9EF;
 }
 
 .contact li{
