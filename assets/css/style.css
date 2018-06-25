@@ -1,49 +1,141 @@
 html{
-    font-size: 25px;
-    font-family: Helvetica;
-    max-width: 320px;
+    line-height: 1.5em;
+    font-family: Helvetica, sans-serif;
+    background-color: #f7fafc;
 }
 
-ul{
+body, h1, h2, ul{
     margin: 0;
     padding: 0;
 }
 
-a{
+
+.wrapper{
+    margin: 1em; 
+    max-width: 720px;
+}
+
+.row{
+    padding: 1em;
+    margin-bottom: 3em;
+    background-color: #fafafa;
+    box-shadow: 0px 5px 10px #BDBDBD, 
+                0px 10px 20px #E0E0E0;
+}
+
+.row--title{
+    margin-bottom: 1em;
+    border-bottom: 1px solid #75715E;
+    box-shadow: none;
+}
+
+.row--title div,
+.row--title a{
+    display: flex;
+}
+
+.row--title--mobile a{
     display: block;
-    height: 64px;
 }
 
-.nav{
-    width: 20%;
-    float: left;    
+.row--title a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    justify-content: space-between;
 }
 
-.nav li{
-    width: 64px;
-    height: 64px;
-    margin-bottom: 50px;
+.row--title img{
+    height: 35px;
+    width: auto;
 }
 
-.bio{
-    width: 65%;
-    float: left;
-    margin-left: 15%;
+h1{
+    padding: 0.15em 0.4em;
+    text-align: center;
 }
 
-.bio li:first-child{
-    margin-top: 7.5%;
+h2{
+    margin: 0 0 0.5em;
+    text-align: center;
 }
 
-.bio li{
-    margin: 87px 0;
-    list-style-type: none;
+.row--about ul{
+    margin: 0 0 0 1em;
+    padding: 0;
 }
 
-.icon--twitter{ 
-    color: #0084b4; 
+.row--about li{
+    margin-bottom: 1em;
 }
 
-.icon--linkedin{ 
-    color: #0077B5; 
+.row--title--desktop{
+    display: none;
+}
+
+.row--about h2 span{
+    color: #F92672;
+}
+
+.row--projects h2 span{
+    color: #A6E22E;
+}
+
+.row--contact h2 span{
+    color: #66D9EF;
+}
+
+.contact-menu{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-menu li{
+    cursor: pointer;
+    list-style: none;
+}
+
+.contact-menu li a{
+    display: flex;
+}
+
+.contact-menu li a svg{
+    height: 2.5em;
+    width: auto;
+}
+
+.icon--github{
+    fill: #333;
+}
+
+.icon--twitter{
+    fill: #1da1f2;
+}
+
+.icon--linkedin{
+    fill: #0077B5;
+}
+
+@media (min-width: 768px){
+    .wrapper{
+        margin: 0 auto;
+    }
+
+    .row--title--desktop{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-menu--desktop li{
+        margin: 0 0 0 1em;
+    }
+
+    .contact-menu--desktop li a svg{
+        height: 2em;
+    }
+
+    .row--title--mobile, 
+    .row--contact{
+        display: none;
+    }
 }
