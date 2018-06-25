@@ -1,24 +1,76 @@
 html{
-    max-width: 760px;
-    line-height: 24px;
+    line-height: 1.5em;
     font-family: Helvetica, sans-serif;
+    background-color: #f7fafc;
 }
 
 body, h1, h2, ul{
     margin: 0;
+    padding: 0;
+}
+
+
+.wrapper{
+    margin: 1em; 
+    max-width: 720px;
 }
 
 .row{
-    margin: 20px 15px;
+    padding: 1em;
+    margin-bottom: 3em;
+    background-color: #fafafa;
+    box-shadow: 0px 5px 10px #BDBDBD, 
+                0px 10px 20px #E0E0E0;
 }
 
 .row--title{
-    padding: 0 0 20px;
+    margin-bottom: 1em;
     border-bottom: 1px solid #75715E;
+    box-shadow: none;
 }
 
-.row h2{
-    padding-bottom: 5px;
+.row--title div,
+.row--title a{
+    display: flex;
+}
+
+.row--title--mobile a{
+    display: block;
+}
+
+.row--title a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    justify-content: space-between;
+}
+
+.row--title img{
+    height: 35px;
+    width: auto;
+}
+
+h1{
+    padding: 0.15em 0.4em;
+    text-align: center;
+}
+
+h2{
+    margin: 0 0 0.5em;
+    text-align: center;
+}
+
+.row--about ul{
+    margin: 0 0 0 1em;
+    padding: 0;
+}
+
+.row--about li{
+    margin-bottom: 1em;
+}
+
+.row--title--desktop{
+    display: none;
 }
 
 .row--about h2 span{
@@ -33,40 +85,57 @@ body, h1, h2, ul{
     color: #66D9EF;
 }
 
-ul{
-    padding: 0 15px;
+.contact-menu{
+    display: flex;
+    justify-content: space-around;
 }
 
-a{
-    color: #AE81FF;
-    display: block;
-}
-
-
-
-.row--desktop{
-    display: none;
-}
-
-.contact li{
-    margin: 0;
-    float: left;
+.contact-menu li{
+    cursor: pointer;
     list-style: none;
 }
 
-.icon svg{
-    fill: #ececec;
-    height: 35px;
-    width: 35px;
-    margin: 10px;
+.contact-menu li a{
+    display: flex;
 }
 
-@media (min-width: 760px){
-    .row--desktop{
-        display: block;
+.contact-menu li a svg{
+    height: 2.5em;
+    width: auto;
+}
+
+.icon--github{
+    fill: #333;
+}
+
+.icon--twitter{
+    fill: #1da1f2;
+}
+
+.icon--linkedin{
+    fill: #0077B5;
+}
+
+@media (min-width: 768px){
+    .wrapper{
+        margin: 0 auto;
     }
 
-    .row--mobile{
+    .row--title--desktop{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact-menu--desktop li{
+        margin: 0 0 0 1em;
+    }
+
+    .contact-menu--desktop li a svg{
+        height: 2em;
+    }
+
+    .row--title--mobile, 
+    .row--contact{
         display: none;
     }
 }
