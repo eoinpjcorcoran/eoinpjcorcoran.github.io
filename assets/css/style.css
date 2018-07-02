@@ -1,7 +1,9 @@
+/* Global Rules */
 html{
     line-height: 1.5em;
-    font-family: Helvetica, sans-serif;
-    background-color: #f7fafc;
+    color: #333;
+    background-color: #efefef;
+    font-family: 'Roboto', sans-serif;
 }
 
 body, h1, h2, ul{
@@ -9,6 +11,9 @@ body, h1, h2, ul{
     padding: 0;
 }
 
+.desktop{
+    display: none !important;
+}
 
 .wrapper{
     margin: 1em; 
@@ -18,46 +23,56 @@ body, h1, h2, ul{
 .row{
     padding: 1em;
     margin-bottom: 3em;
-    background-color: #fafafa;
-    box-shadow: 0px 5px 10px #BDBDBD, 
-                0px 10px 20px #E0E0E0;
+    background-color: #fff;
 }
 
-.row--title{
+.row--header{
     margin-bottom: 1em;
-    border-bottom: 1px solid #75715E;
-    box-shadow: none;
+    background-color: #0f294a;
 }
 
-.row--title div,
-.row--title a{
-    display: flex;
-}
-
-.row--title--mobile a{
-    display: block;
-}
-
-.row--title a{
+.row--header a{
     cursor: pointer;
     text-decoration: none;
-    color: black;
-    justify-content: space-between;
 }
 
-.row--title img{
+.contact-menu--desktop .icon{
+    fill: #efefef;
+}
+
+.contact-menu--desktop .icon:hover{
+    fill: #fff;
+}
+
+.contact-menu--desktop .icon--github:active{
+    fill: #333;
+}
+
+.contact-menu--desktop .icon--twitter:active{
+    fill: #1da1f2;
+}
+.contact-menu--desktop .icon--linkedin:active{
+    fill: #0077B5;
+}
+
+.row--header img{
     height: 35px;
     width: auto;
 }
 
+h1, h2{
+    font-weight: 500;
+    text-align: center;
+}
+
 h1{
     padding: 0.15em 0.4em;
-    text-align: center;
+    color: #fff;
 }
 
 h2{
     margin: 0 0 0.5em;
-    text-align: center;
+    color: #394d60;
 }
 
 .row--about ul{
@@ -69,8 +84,13 @@ h2{
     margin-bottom: 1em;
 }
 
-.row--title--desktop{
+.row--header--desktop{
     display: none;
+}
+
+.row h2 span{
+    font-size: large;
+    vertical-align: bottom;
 }
 
 .row--about h2 span{
@@ -104,24 +124,18 @@ h2{
     width: auto;
 }
 
-.icon--github{
-    fill: #333;
-}
-
-.icon--twitter{
-    fill: #1da1f2;
-}
-
-.icon--linkedin{
-    fill: #0077B5;
-}
-
 @media (min-width: 768px){
+    .mobile{
+        display: none !important;
+    }
+
     .wrapper{
         margin: 0 auto;
     }
 
-    .row--title--desktop{
+    .row--header,
+    .home-link,
+    .contact-menu{
         display: flex;
         justify-content: space-between;
     }
@@ -134,7 +148,7 @@ h2{
         height: 2em;
     }
 
-    .row--title--mobile, 
+    .row--header--mobile, 
     .row--contact{
         display: none;
     }
