@@ -1,14 +1,19 @@
+/** Global Rules **/
 html{
     line-height: 1.5em;
-    font-family: Helvetica, sans-serif;
-    background-color: #f7fafc;
+    color: #333;
+    background-color: #efefef;
+    font-family: 'Roboto', sans-serif;
 }
 
-body, h1, h2, ul{
+body, h2, ul{
     margin: 0;
     padding: 0;
 }
 
+.desktop{
+    display: none;
+}
 
 .wrapper{
     margin: 1em; 
@@ -18,124 +23,262 @@ body, h1, h2, ul{
 .row{
     padding: 1em;
     margin-bottom: 3em;
-    background-color: #fafafa;
-    box-shadow: 0px 5px 10px #BDBDBD, 
-                0px 10px 20px #E0E0E0;
+    background-color: #fdfdfd;
 }
 
-.row--title{
-    margin-bottom: 1em;
-    border-bottom: 1px solid #75715E;
-    box-shadow: none;
+.row .header{
+    margin-bottom: 0.5em;
+    color: #0D3A58;
+    font-weight: 500;
+    text-align: center;
 }
 
-.row--title div,
-.row--title a{
-    display: flex;
+.row .header span{
+    font-size: large;
+    vertical-align: bottom;
 }
 
-.row--title--mobile a{
-    display: block;
-}
-
-.row--title a{
-    cursor: pointer;
+.link{
     text-decoration: none;
-    color: black;
-    justify-content: space-between;
 }
 
-.row--title img{
-    height: 35px;
-    width: auto;
-}
-
-h1{
-    padding: 0.15em 0.4em;
-    text-align: center;
-}
-
-h2{
-    margin: 0 0 0.5em;
-    text-align: center;
-}
-
-.row--about ul{
-    margin: 0 0 0 1em;
-    padding: 0;
-}
-
-.row--about li{
+/** Mobile Menu **/
+.nav--mobile{
+    padding: 1em;
+    padding-bottom: 0;
     margin-bottom: 1em;
+    background-color: #0D3A58;
+    border-bottom: 2px solid #FF9D00;
 }
 
-.row--title--desktop{
-    display: none;
+.nav--mobile .title{
+    margin-bottom: 0.5em;
+    color: #fdfdfd;
+    font-weight: 500;
+    text-align: center;
 }
 
-.row--about h2 span{
-    color: #F92672;
-}
-
-.row--projects h2 span{
-    color: #A6E22E;
-}
-
-.row--contact h2 span{
-    color: #66D9EF;
-}
-
-.contact-menu{
+.nav--mobile .menu{
+    height: 3em;
     display: flex;
     justify-content: space-around;
 }
 
-.contact-menu li{
+.nav--mobile .menu .item{
+    display: flex;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav--mobile .menu .item .link{
+    height: 2em;
+    padding: 0.5em;
+    color: #fdfdfd;
+}
+
+.nav--mobile .menu .item .link:hover{
+    text-decoration: underline;
+}
+
+.nav--mobile .menu .item .link--about:hover{
+    text-decoration-color: #F92672;
+}
+
+.nav--mobile .menu .item .link--blog:hover{
+    text-decoration-color: #FF9D00;
+}
+
+.nav--mobile .menu .item .link--projects:hover{
+    text-decoration-color: #A6E22E;
+}
+
+.nav--mobile .menu .item .link--contact:hover{
+    text-decoration-color: #2AFFDF;
+}
+
+.nav--mobile .menu .item .link--about:active{
+    color: #F92672;
+}
+
+.nav--mobile .menu .item .link--blog:active{
+    color: #FF9D00;
+}
+
+.nav--mobile .menu .item .link--projects:active{
+    color: #A6E22E;
+}
+
+.nav--mobile .menu .item .link--contact:active{
+    color: #2AFFDF;
+}
+
+/** Mobile Profile **/
+.profile--mobile img{
+    display: flex;
+    margin: 1em auto;
+    border-radius: 50%;
+    border: 1px solid #0D3A58;
+}
+
+/** About Section **/
+.row--about .header span{
+    color: #F92672;
+}
+
+.row--about .list{
+    margin-left: 1em;
+}
+
+.row--about .list .item{
+    margin-bottom: 1em;
+}
+
+.row--about .list .item .link{
+    color: #0366d6;
+    text-decoration: none;
     cursor: pointer;
+}
+
+.row--about .list .item .link:hover{
+    text-decoration: underline;
+}
+
+/** Blog Section **/
+.row--blog .header span{
+    color: #FF9D00;
+}
+
+/** Projects Section **/
+.row--projects .header span{
+    color: #A6E22E;
+}
+
+/** Contact Section **/
+.row--contact .header span{
+    color: #66D9EF;
+}
+
+.row--contact .menu{
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.row--contact .menu .item{
+    color: #fdfdfd;
     list-style: none;
 }
 
-.contact-menu li a{
-    display: flex;
-}
-
-.contact-menu li a svg{
+.row--contact .menu .item .link .icon{
     height: 2.5em;
-    width: auto;
 }
 
-.icon--github{
-    fill: #333;
+.row--contact .menu .item .link .icon--github{
+    fill: #35434d;
 }
 
-.icon--twitter{
+.row--contact .menu .item .link .icon--twitter{
     fill: #1da1f2;
 }
 
-.icon--linkedin{
+.row--contact .menu .item .link .icon--linkedin{
     fill: #0077B5;
 }
 
+
+/** Tablet & Above **/
 @media (min-width: 768px){
+    /** General Rules **/
+    .mobile{
+        display: none;
+    }
+
     .wrapper{
         margin: 0 auto;
     }
 
-    .row--title--desktop{
+    /** Deskop Menu **/
+    .nav--desktop{
         display: flex;
         justify-content: space-between;
+        height: 4em;
+        padding: 1em;
+        padding-bottom: 0;
+        margin-bottom: 1em;
+        background-color: #0D3A58;
+        border-bottom: 2px solid #FF9D00;
     }
 
-    .contact-menu--desktop li{
-        margin: 0 0 0 1em;
+    .nav--desktop .menu,
+    .nav--desktop .menu .item,
+    .nav--desktop .menu .item .link{
+        display: flex;
+        max-height: 3em;
     }
 
-    .contact-menu--desktop li a svg{
+    .nav--desktop .menu .item{
+        list-style-type: none;
+    }
+
+    .nav--desktop .menu--profile .item img{
+        height: 3em;
+        border-radius: 50%;
+    }
+
+    .nav--desktop .menu--profile .item .link .title{
+        padding: 0.5em;
+        color: #fdfdfd;
+    }
+
+    .nav--desktop .menu--nav .item .link{
+        padding: 0.75em;
+        color: #fdfdfd;
+    }
+
+    .nav--desktop .menu--contact .item .link .icon{
         height: 2em;
+        padding: 0.5em;
+        fill: #fdfdfd;
+    }
+    
+    .nav--desktop .menu--nav .item .link:hover{
+        text-decoration: underline;
     }
 
-    .row--title--mobile, 
-    .row--contact{
-        display: none;
+    .nav--desktop .menu--nav .item .link--about:hover{
+        text-decoration-color: #F92672;
+    }
+
+    .nav--desktop .menu--nav .item .link--blog:hover{
+        text-decoration-color: #FF9D00;
+    }
+
+    .nav--desktop .menu--nav .item .link--projects:hover{
+        text-decoration-color: #A6E22E;
+    }
+
+    .nav--desktop .menu--nav .item .link--about:active{
+        color: #F92672;
+    }
+
+    .nav--desktop .menu--nav .item .link--blog:active{
+        color: #FF9D00;
+    }
+
+    .nav--desktop .menu--nav .item .link--projects:active{
+        color: #A6E22E;
+    }
+
+    .nav--desktop .menu--contact .item .link .icon--github:hover{
+        fill: #333;
+    }
+
+    .nav--desktop .menu--contact .item .link .icon--twitter:hover{
+        fill: #1da1f2;
+    }
+
+    .nav--desktop .menu--contact .item .link .icon--linkedin:hover{
+        fill: #0077B5;
     }
 }
