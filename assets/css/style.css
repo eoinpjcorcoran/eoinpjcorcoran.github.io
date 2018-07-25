@@ -6,7 +6,7 @@ html{
     font-family: 'Roboto', sans-serif;
 }
 
-body, h1, h2, ul{
+body, h2, ul{
     margin: 0;
     padding: 0;
 }
@@ -27,52 +27,74 @@ body, h1, h2, ul{
 }
 
 .row--header{
+    padding-bottom: 0;
     margin-bottom: 1em;
-    background-color: #0f294a;
+    background-color: #0D3A58;
 }
 
-.row--header a{
+.row--header .link{
     cursor: pointer;
     text-decoration: none;
 }
 
-.contact-menu--desktop .icon{
-    fill: #efefef;
-}
-
-.contact-menu--desktop .icon:hover{
-    fill: #fff;
-}
-
-.contact-menu--desktop .icon--github:active{
-    fill: #333;
-}
-
-.contact-menu--desktop .icon--twitter:active{
-    fill: #1da1f2;
-}
-.contact-menu--desktop .icon--linkedin:active{
-    fill: #0077B5;
-}
-
-.row--header img{
-    height: 35px;
-    width: auto;
-}
-
-h1, h2{
+.row--header .link .title{
+    margin: 0;
+    color: #fafafa;
     font-weight: 500;
     text-align: center;
 }
 
-h1{
-    padding: 0.15em 0.4em;
-    color: #fff;
+.menu{
+    display: flex;
+    justify-content: space-around;
 }
 
-h2{
+.menu--nav .item{
+    width: 30%;
+    margin: 0 0.5em;
+    padding: 0.5em 0 1em 0;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.mobile .menu--nav{   
+    margin-top: 0.5em;
+}
+
+.menu--nav .item .link{
+    color: #eaeaea;
+}
+
+.menu--nav .item--about .link:hover{
+    color: #F92672;
+}
+
+.menu--nav .item--blog .link:hover{
+    color: #FF9D00;
+}
+
+.menu--nav .item--projects .link:hover{
+    color: #A6E22E;
+}
+
+.menu--nav .item--contact .link:hover{
+    color: #2AFFDF;
+}
+
+.profile img{
+    margin: 1em auto;
+    display: flex;
+    border: 1px solid #333;
+    border-radius: 50%;
+}
+
+.row__header{
+    font-weight: 500;
+    text-align: center;
     margin: 0 0 0.5em;
-    color: #394d60;
+    color: #333;
 }
 
 .row--about ul{
@@ -80,76 +102,133 @@ h2{
     padding: 0;
 }
 
-.row--about li{
+.row--about ul li{
     margin-bottom: 1em;
 }
 
-.row--header--desktop{
-    display: none;
+.row--about ul li .link{
+    color: #0366d6;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-.row h2 span{
+.row--about ul li .link:hover{
+    text-decoration: underline;
+}
+
+.row .row__header span{
     font-size: large;
     vertical-align: bottom;
 }
 
-.row--about h2 span{
+.row--about .row__header span{
     color: #F92672;
 }
 
-.row--projects h2 span{
+.row--projects .row__header span{
     color: #A6E22E;
 }
 
-.row--contact h2 span{
+.row--contact .row__header span{
     color: #66D9EF;
 }
 
-.contact-menu{
-    display: flex;
-    justify-content: space-around;
-}
-
-.contact-menu li{
+.menu--contact .item{
+    color: #f2f2f2;
     cursor: pointer;
     list-style: none;
 }
 
-.contact-menu li a{
-    display: flex;
+.menu--contact .item .link .icon{
+    width: auto;
+    height: 2.5em;
 }
 
-.contact-menu li a svg{
-    height: 2.5em;
-    width: auto;
+.mobile .menu--contact .icon--github{
+    fill: #35434d;
 }
+
+.mobile .menu--contact .icon--twitter{
+    fill: #1da1f2;
+}
+
+.mobile .menu--contact .icon--linkedin{
+    fill: #0077B5;
+}
+
 
 @media (min-width: 768px){
     .mobile{
         display: none !important;
     }
 
+    .desktop{
+        display: flex !important;
+    }
+
     .wrapper{
         margin: 0 auto;
     }
 
-    .row--header,
-    .home-link,
-    .contact-menu{
+    .row--header{
         display: flex;
         justify-content: space-between;
     }
 
-    .contact-menu--desktop li{
-        margin: 0 0 0 1em;
+    .row--header{
+        max-height: 50px;
+        padding: 1em;
     }
 
-    .contact-menu--desktop li a svg{
-        height: 2em;
+    .row--header .menu .item{
+        margin: 0 1em;
     }
 
-    .row--header--mobile, 
-    .row--contact{
-        display: none;
+    .row--header .menu .item .link{
+        display: flex;
+    }
+
+    .row--header .menu--profile .item{
+        margin: 0 0.5em;
+        list-style: none;
+    }
+
+    .row--header .menu--profile img{
+        width: auto;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+    }
+
+    .row--header .menu--profile .title{
+        padding: 0.5em 0;
+    }
+
+    .row--header .menu--nav .item{
+        padding: 1em;
+    }
+
+    .row--header .menu--contact .item{
+        padding: 5px 0;
+    }
+
+    .row--header .menu--contact .item{
+        padding: 5px 0;
+    }
+
+    .desktop .menu--contact .icon{
+        fill: #fff;
+    }
+
+    .desktop .menu--contact .icon--github:hover{
+        fill: #35434d;
+    }
+    
+    .desktop .menu--contact .icon--twitter:hover{
+        fill: #1da1f2;
+    }
+    
+    .desktop .menu--contact .icon--linkedin:hover{
+        fill: #0077B5;
     }
 }
