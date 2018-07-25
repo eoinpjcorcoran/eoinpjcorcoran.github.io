@@ -24,7 +24,7 @@
     </head>
 
     <body>
-        <div class="row row--header desktop">
+        <div class="nav nav--desktop desktop">
             <ul class="menu menu--profile" >
                 <li class="item">
                     <a class="link" href="/">
@@ -38,20 +38,19 @@
                 </li>
             </ul>
 
+            <!--
             <ul class="menu menu--nav">
-                <li class="item item--about">
-                    <a class="link" href="#about">about</a>
+                <li class="item">
+                    <a class="link link--about" href="#about">about</a>
                 </li>
-                <li class="item item--blog">
-                    <a class="link" href="#blog">blog</a>
+                <li class="item">
+                    <a class="link link--blog" href="#blog">blog</a>
                 </li>
-                <li class="item item--projects">
-                    <a class="link" href="#projects">projects</a>
-                </li>
-                <li class="item item--contact" href="#contact">
-                    <a class="link" href="#contact">contact</a>
-                </li>
+                <li class="item">
+                    <a class="link link--projects" href="#projects">projects</a>
+                </li> 
             </ul>
+            -->
 
             <ul class="menu menu--contact">
                 <li class="item">
@@ -78,52 +77,64 @@
             </ul>
         </div>
             
-        <div class="row row--header mobile">
+        <div class="nav nav--mobile mobile">
             <a class="link" href="/">
                 <h2 class="title">Eoin Corcoran</h2>
             </a>
 
-            <ul class="menu menu--nav">
-                <li class="item item--about">
-                    <a class="link" href="#about">about</a>
+            <ul class="menu">
+                <li class="item">
+                    <a class="link link--about" href="#about">about</a>
                 </li>
-                <li class="item item--blog">
-                    <a class="link" href="#blog">blog</a>
+                <!--
+                <li class="item">
+                    <a class="link link--blog" href="#blog">blog</a>
                 </li>
-                <li class="item item--projects">
-                    <a class="link" href="#projects">projects</a>
+                <li class="item">
+                    <a class="link link--projects" href="#projects">projects</a>
                 </li>
-                <li class="item item--contact" href="#contact">
-                    <a class="link" href="#contact">contact</a>
+                -->
+                <li class="item">
+                    <a class="link link--contact" href="#contact">contact</a>
                 </li>
             </ul>
         </div>     
 
         <main class="wrapper">
-            <div class="profile mobile" >
+            <div class="profile--mobile mobile" >
                 <img src="assets/img/profile.jpg" alt="A silhouette of Eoin looking out towards Kenmare Bay" />
             </div>
 
             <div class="row row--about" id="about">
-                <h2 class="row__header">
+                <h2 class="header">
                     <span>//</span> about <span>//</span>
                 </h2>
 
-                <ul>
-                    <li>Eoin is a web developer from Cork, Ireland.</li>
-                    <li>Graduated with a B.Sc. in <a class="link" href="https://www.ucc.ie/en/compsci/">Computer Science</a> from <a class="link" href="https://www.ucc.ie">University College Cork</a>.</li>
-                    <li>Working with <a class="link" href="https://www.landmarkdigital.ie/">Landmark Digital</a>, the parent company of leading Irish news websites such as <a class="link" href="https://www.irishexaminer.com/">The Irish Examiner</a>, <a class="link" href="https://www.breakingnews.ie/">BreakingNews</a> and <a class="link" href="https://www.eveningecho.ie/">The Evening Echo</a>.</li>
-                    <li>Primarily interested in creating highly optimised mobile-first web apps with a side-interest in Data Analysis.</li>
-                    <li>When not working you'll likely find him reading, plotting (graphs), watching Hurling / Soccer / <a class="link" href="https://en.wikipedia.org/wiki/Mixed_martial_arts">MMA</a> or acquiring his latest injury through <a class="link" href="https://en.wikipedia.org/wiki/Brazilian_jiu-jitsu" >BJJ</a>.</li>
+                <ul class="list">
+                    <li class="item">
+                        Eoin is a web developer from Cork, Ireland.
+                    </li>
+                    <li class="item">
+                        Graduated with a B.Sc. in <a class="link" href="https://www.ucc.ie/en/compsci/">Computer Science</a> from <a class="link" href="https://www.ucc.ie">University College Cork</a>.
+                    </li>
+                    <li class="item">
+                        Working with <a class="link" href="https://www.landmarkdigital.ie/">Landmark Digital</a>, the parent company of leading Irish news websites such as <a class="link" href="https://www.irishexaminer.com/">The Irish Examiner</a>, <a class="link" href="https://www.breakingnews.ie/">BreakingNews</a> and <a class="link" href="https://www.eveningecho.ie/">The Evening Echo</a>.
+                    </li>
+                    <li class="item">
+                        Primarily interested in creating highly optimised mobile-first web apps with a side-interest in Data Analysis.
+                    </li>
+                    <li class="item">
+                        When not working you'll likely find him reading, plotting (graphs), watching Hurling / Soccer / <a class="link" href="https://en.wikipedia.org/wiki/Mixed_martial_arts">MMA</a> or acquiring his latest injury through <a class="link" href="https://en.wikipedia.org/wiki/Brazilian_jiu-jitsu" >BJJ</a>.
+                    </li>
                 </ul>
             </div>
 
             <div class="row row--contact mobile" id="contact" >
-                <h2 class="row__header">
+                <h2 class="header">
                     <span>//</span> contact <span>//</span>
                 </h2>
 
-                <ul class="menu menu--contact">
+                <ul class="menu">
                     <li class="item">
                         <a class="link" href="https://github.com/eoinpjcorcoran">
                             <svg class="icon icon--github" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
