@@ -20,7 +20,7 @@ This article is to track web developer material I have learned and have yet to l
 
 - [X] HTML (Semantic HTML5, Multimedia, Forms & Validation)
 - [X] CSS Basics (Syntax, Selectors, Properties)
-- [ ] Responsive design (CSS Grid & Flexbox)
+- [X] CSS Layouts (Display, Postions, Flexbox, Media Queries)
 - [ ] BEM
 - [ ] Bootstrap
 - [ ] SASS/SCSS
