@@ -22,7 +22,7 @@ This article is to track web developer material I have learned and have yet to l
 - [X] CSS Basics (Syntax, Selectors, Properties)
 - [X] CSS Layouts (Display, Postions, Flexbox, Media Queries)
 - [X] BEM
-- [ ] Bootstrap
+- [X] Bootstrap
 - [ ] SASS/SCSS
 - [ ] Styled-Components
 - [ ] Reactstrap
