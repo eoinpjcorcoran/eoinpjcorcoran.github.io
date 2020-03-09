@@ -1,8 +1,8 @@
-# Learning Material:
+# Learning Material
 
 This article is to track web developer material I have learned and have yet to learn. A rough mix of Roadmaps.sh [Front-End](https://roadmap.sh/roadmaps/frontend.png) and [Back-End](https://roadmap.sh/roadmaps/backend.png) guides.
 
-## Concepts:
+## Concepts
 
 - [X] Internet
   - [ ] HTTP(S) Requests
@@ -16,7 +16,7 @@ This article is to track web developer material I have learned and have yet to l
   - [ ] Resource Management (Processes, Memory, I/O)
   - [ ] Threads, Concurrency
 
-## HTML & CSS:
+## HTML & CSS
 
 - [X] HTML (Semantic HTML5, Multimedia, Forms & Validation)
 - [X] CSS Basics (Syntax, Selectors, Properties)
@@ -27,13 +27,13 @@ This article is to track web developer material I have learned and have yet to l
 - [ ] Styled-Components
 - [ ] Reactstrap
 
-## JavaScript:
+## JavaScript
 
-- [ ] Basics (Syntax, Datatypes, Logic)
-- [ ] Functions, Classes, Objects
+- [ ] Basics (Syntax, Types, Objects)
+- [ ] Async/Await, Promises, Microtasks
+- [ ] Concurrency Model & Event Loop
+- [ ] Collections & Generators
 - [ ] Closures
-- [ ] Generators
-- [ ] Promises, Async/Await, Microtasks, Event Loop
 - [ ] Web APIs
   - [ ] DOM
   - [ ] Fetch / AJAX
@@ -49,14 +49,14 @@ This article is to track web developer material I have learned and have yet to l
   - [ ] React Native
 - [ ] Web Assembly
 
-## C#:
+## C#
 
 - [ ] ASP.NET Core MVC
 - [ ] Blazor
 - [ ] Entity Framework Core
 - [ ] Dependency Injection
 
-## Data:
+## Data
 
 - [ ] SQL
 - [ ] NoSQL
@@ -77,7 +77,7 @@ This article is to track web developer material I have learned and have yet to l
   - [ ] Indexes
   - [ ] DB Normalization
 
-## Testing & Tools:
+## Testing & Tools
 
 - [ ] Git
 - [ ] Package managers (npm, yarn)
@@ -91,9 +91,9 @@ This article is to track web developer material I have learned and have yet to l
 - [ ] Docker
 - [ ] IIS / Kestrel
 
-## Algorithms & Data Structures:
+## Algorithms & Data Structures
 
-### Algorithms:
+### Algorithms
 
 - [ ] Sorting
   - [ ] Bubble
@@ -113,7 +113,7 @@ This article is to track web developer material I have learned and have yet to l
   - [ ] SHA
   - [ ] md5
 
-### Data Structures:
+### Data Structures
 
 - [ ] Arrays
 - [ ] Lists (Linked, Singly & Doubly)
