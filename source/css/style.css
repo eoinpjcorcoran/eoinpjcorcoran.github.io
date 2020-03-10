@@ -1,0 +1,18 @@
+html, body{
+    background-color: #efefef;
+}
+
+.box{
+    background-color: #fff;
+}
+
+.header::before,
+.header::after{
+    content: " // ";
+    font-size: 1.25rem;
+}
+
+    .header--about::before,
+    .header--about::after{
+        color: #F92672;
+    }
