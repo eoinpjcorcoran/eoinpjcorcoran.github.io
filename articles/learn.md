@@ -29,7 +29,7 @@ This article is to track web developer material I have learned and have yet to l
 
 ## JavaScript
 
-- [ ] Basics (Syntax, Types, Objects)
+- [X] Basics (Syntax, Types, Objects)
 - [ ] Async/Await, Promises, Microtasks
 - [ ] Concurrency Model & Event Loop
 - [ ] Collections & Generators
